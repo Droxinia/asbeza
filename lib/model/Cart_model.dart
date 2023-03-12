@@ -21,7 +21,7 @@ class Cart extends ChangeNotifier {
     ['Chicken', '1 Chicken', '390 ', 'assets/chicken.jpg'],
     ['Fish', '1 Fish', '140 ', 'assets/fish.jpg'],
     ['Sliced Bread', '1 bread', '6 ', 'assets/sliced_bread.jpg'],
-    ['Burrger bread', '1 killo', '40 ', 'assets/zuccuni.jpg'],
+    ['Burrger bread', '1 killo', '40 ', 'assets/burrger_bread.jpg'],
     ['Minced meat', '1 killo', '40 ', 'assets/minced_meat.jpg']
   ];
   List _cartitems = [];

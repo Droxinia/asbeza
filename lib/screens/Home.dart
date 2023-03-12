@@ -36,6 +36,23 @@ class Home extends StatelessWidget {
                   color: Colors.blue),
             ),
           ),
+          SizedBox(
+            height: 4,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Text(
+              "Buy fresh grocceries with the best price",
+              style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(),
+          Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Divider(
+              thickness: 4,
+            ),
+          ),
           Expanded(child: Consumer<Cart>(
             builder: (context, value, child) {
               return GridView.builder(
