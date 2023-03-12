@@ -46,7 +46,7 @@ class History extends StatelessWidget {
                     );
                   })),
           Padding(
-            padding: const EdgeInsets.all(36.0),
+            padding: const EdgeInsets.all(34.0),
             child: Container(
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(9)),
@@ -54,15 +54,12 @@ class History extends StatelessWidget {
               child: Row(
                 children: [
                   Column(children: [
-                    const Text('Customer spent up to now',
+                    const Text('Customer has spent up to ',
                         style: TextStyle(color: Colors.white)),
                     Text('\$' + value.calculatetotal(),
                         style: const TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.white)),
                   ]),
-                  const SizedBox(
-                    width: 160,
-                  ),
                 ],
               ),
             ),
