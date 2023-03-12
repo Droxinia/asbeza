@@ -1,4 +1,5 @@
 import 'package:asbeza/model/Cart_model.dart';
+import 'package:asbeza/screens/Food.dart';
 import 'package:asbeza/screens/History.dart';
 import 'package:asbeza/screens/Home.dart';
 import 'package:asbeza/screens/Profile.dart';
@@ -36,7 +37,7 @@ class Base extends StatefulWidget {
 
 class _BaseState extends State<Base> {
   int _currentindex = 0;
-  final tabs = [const Home(), const History(), const Profile()];
+  final tabs = [const Home(), const History(), const Profile(), const Food()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +56,11 @@ class _BaseState extends State<Base> {
           BottomNavigationBarItem(
               icon: Icon(Icons.person),
               backgroundColor: Colors.green,
-              label: 'Profile')
+              label: 'Profile'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.food_bank),
+              backgroundColor: Colors.green,
+              label: 'Food')
         ],
         onTap: (index) {
           setState(() {
