@@ -22,9 +22,10 @@ class Cart extends ChangeNotifier {
     ['Fish', '1 Fish', '140 ', 'assets/fish.jpg'],
     ['Sliced Bread', '1 bread', '6 ', 'assets/sliced_bread.jpg'],
     ['Burrger bread', '1 killo', '40 ', 'assets/burrger_bread.jpg'],
-    ['Minced meat', '1 killo', '40 ', 'assets/minced_meat.jpg']
+    ['Minced meat', '1 killo', '40 ', 'assets/minced_meat.jpg'],
+    ['Mirinda', '1 Mirinda', '25', 'assets/mirinda.jpg']
   ];
-  List _cartitems = [];
+  final List _cartitems = [];
   get shopItems => _shopItems;
   get cartitems => _cartitems;
 

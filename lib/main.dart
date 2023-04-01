@@ -1,3 +1,5 @@
+import 'package:asbeza/Repositories.dart/repo.dart';
+import 'package:asbeza/components/Food.dart';
 import 'package:asbeza/model/Cart_model.dart';
 import 'package:asbeza/screens/Food.dart';
 import 'package:asbeza/screens/History.dart';
@@ -37,7 +39,15 @@ class Base extends StatefulWidget {
 
 class _BaseState extends State<Base> {
   int _currentindex = 0;
-  final tabs = [const Home(), const History(), const Profile(), const Food()];
+  final tabs = [
+    const Home(),
+    const History(),
+    const Profile(),
+    // RepositoryProvider(
+    //   create: (context) => Foodrepositery(),
+    //   child: const Foo,
+    // )
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
